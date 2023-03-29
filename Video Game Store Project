@@ -1,0 +1,21 @@
+CREATE TABLE Players_Choice (ID INTEGER PRIMARY KEY, Title TEXT, Type TEXT, Version TEXT, Price INTEGER, Units INTEGER, Rating INTEGER);
+
+INSERT INTO Players_Choice VALUES (1, "Playstation 5", "Console", "Playstation 5", 499.99, 9, 4.8);
+INSERT INTO Players_Choice VALUES (2, "Xbox Series X", "Console", "Xbox Series X", 499.99, 10, 4.8);
+INSERT INTO Players_Choice VALUES (3, "Nintendo Switch", "Console", "Nintendo Switch", 299.99, 6, 4.8);
+INSERT INTO Players_Choice VALUES (4, "Playstation 5 Controller", "Peripherel", "Playstation 5", 69.99, 9, 4.8);
+INSERT INTO Players_Choice VALUES (5, "Xbox Series X Controller", "Peripherel", "Xbox Series X", 69.99, 9, 4.8);
+INSERT INTO Players_Choice VALUES (6, "Genshin Impact", "Game", "Playstation 5", 69.99, 3, 4.5);
+INSERT INTO Players_Choice VALUES (7, "Resident Evil 4", "Game", "Playstation 5", 39.99, 2, 4.7);
+INSERT INTO Players_Choice VALUES (8, "Sonic Frontiers", "Game", "Playstation 5", 59.99, 3, 4.0);
+INSERT INTO Players_Choice VALUES (9, "Street Fighter 6", "Game", "Playstation 5", 69.99, 6, 4.5);
+INSERT INTO Players_Choice VALUES (10, "Final Fantasy VII Remake", "Game", "Playstation 5", 49.00, 2, 4.4);
+INSERT INTO Players_Choice VALUES (11, "Elden Ring", "Game", "Xbox Series X", 69.99, 4, 4.8);
+INSERT INTO Players_Choice VALUES (12, "Hogwarts Legacy", "Game", "Xbox Series X", 69.99, 7, 4.7);
+INSERT INTO Players_Choice VALUES (13, "Diablo 4", "Game", "Xbox Series X", 59.9, 10, 4.4);
+INSERT INTO Players_Choice VALUES (14, "Marvel's Midnight Suns", "Game", "Xbox Series X", 69.00, 1, 4.1);
+INSERT INTO Players_Choice VALUES (15, "Mario Kart 8 Deluxe", "Game", "Nintendo Switch", 49.99, 5, 4.9);
+
+SELECT Title, Units, Price FROM Players_Choice ORDER BY Price;
+
+SELECT Version, Sum(Price) AS Inventory FROM Players_Choice GROUP BY "Version";
