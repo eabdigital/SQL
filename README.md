@@ -1,2 +1,2 @@
 # SQL
-SQL Portfolio
+Erik's SQL Portfolio
