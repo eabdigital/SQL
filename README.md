@@ -1,2 +1,2 @@
-# SQL
-Erik's SQL Portfolio
+# Erik's SQL Portfolio
+SQL
